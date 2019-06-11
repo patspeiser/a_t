@@ -1,0 +1,8 @@
+<div class='row'>
+	<div class='col-md'>
+		<div ng-if="activeQuestion">
+			<span>{{activeQuestion.question}}</span>
+			<li ng-click="guess($index)" ng-repeat="choice in activeQuestion.formatted_answers.answers track by $index">{{choice}}</li>
+		</div>			
+	</div>
+</div>
